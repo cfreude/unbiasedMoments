@@ -1,0 +1,17 @@
+# INIT: conda env create -f .conda.yml
+# UPDATE: conda env update --file .conda.yml --prune
+name: jpy-r
+channels:
+- defaults
+- conda-forge
+dependencies:
+  - python=3
+  - pip  
+  - numpy
+  - sympy
+  - pandas
+  - r-essentials
+  - pip:
+    - jupyterlab
+    - ipywidgets
+    - rpy2
